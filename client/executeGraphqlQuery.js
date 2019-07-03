@@ -1,6 +1,6 @@
 const fetch = require('node-fetch');
 
-const serverUrl = 'http://localhost:12345';
+const serverUrl = 'http://localhost:33333';
 
 async function executeGraphqlQuery(query) {
   const response = await fetch(`${serverUrl}/graphql`, {

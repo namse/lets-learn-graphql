@@ -2,7 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const resolveGraphqlQuery = require('./graphql/resolveGraphqlQuery');
 
-const port = 12345;
+const port = 33333;
 
 const app = express();
 
