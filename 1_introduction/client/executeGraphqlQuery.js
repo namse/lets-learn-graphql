@@ -1,6 +1,7 @@
 const fetch = require('node-fetch');
+const settings = require('../../settings');
 
-const serverUrl = 'http://localhost:33333';
+const serverUrl = `http://localhost:${settings.ports.graphql}`;
 
 async function executeGraphqlQuery(query) {
   const response = await fetch(`${serverUrl}/graphql`, {
