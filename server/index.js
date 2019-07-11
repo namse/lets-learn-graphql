@@ -1,8 +1,9 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const resolveGraphqlQuery = require('./graphql/resolveGraphqlQuery');
+const settings = require('../settings');
 
-const port = 33333;
+const port = settings.ports.graphql;
 
 const app = express();
 
